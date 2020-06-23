@@ -46,6 +46,13 @@ def get_brka_rets(monthly=False):
         rets = rets.resample("M").apply( compound ).to_period("M")
     return rets
 
+def get_ind_returns():
+    """
+    Load and format the Ken French 30 Industry Portfolios Value Weighted Monthly Returns
+    """
+    return get_ind_file("rets")
+
+
 def get_fff_returns():
     '''
     Load the Fama-French Research Factors Monthly Dataset.
