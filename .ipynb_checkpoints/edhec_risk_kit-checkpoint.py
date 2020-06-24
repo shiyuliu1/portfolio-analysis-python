@@ -955,6 +955,11 @@ def compounding_rate_inv(R, periods_per_year=None):
         return np.log(1+R)
     else:
         return periods_per_year * ( (1+R)**(1/periods_per_year) - 1 )
+    
+def compound1(r):
+    return (1+r).prod()-1
+def compound2(r):
+    return np.expm1(np.log1p(r).sum())
 
 def simulate_cir(n_years=10, n_scenarios=10, a=0.05, b=0.03, sigma=0.05, periods_per_year=12, r0=None):
     '''
