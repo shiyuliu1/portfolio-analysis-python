@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from scipy.optimize import minimize
 from numpy.linalg import inv
+import pandas as pd
 
 # ---------------------------------------------------------------------------------
 # Load and format data files

@@ -1,10 +1,10 @@
-import pandas as pd
 import numpy as np
 import scipy.stats
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from scipy.optimize import minimize
 from numpy.linalg import inv
+import pandas as pd
 
 # ---------------------------------------------------------------------------------
 # Load and format data files
